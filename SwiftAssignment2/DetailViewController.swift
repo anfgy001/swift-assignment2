@@ -38,6 +38,10 @@ class DetailViewController: UIViewController {
         //var thePageLabel = pageLabel.text!;
         pageLabel.center.x = screenWidth / 2;
         imageView.center.x = screenWidth / 2;
+        
+        if (DetailViewController)
+        
+        
         detailDescriptionLabel.center.x = screenWidth / 2;
         
         
