@@ -1,9 +1,8 @@
 //
-//  DetailViewController.swift
-//  TestMD
-//
-//  Created by Adam Jenkins on 11/9/17.
-//  Copyright © 2017 Adam Jenkins. All rights reserved.
+//  Mobile Application Enterprise Development Assignment 2
+//  Created by Gianni Anfiteatro
+//  anfgy001
+//  110169824
 //
 
 import UIKit
@@ -36,13 +35,13 @@ class DetailViewController: UIViewController {
         let screenSize = UIScreen.main.bounds;
         let screenWidth = screenSize.width;
         //var thePageLabel = pageLabel.text!;
-        pageLabel.center.x = screenWidth / 2;
-        imageView.center.x = screenWidth / 2;
+        //pageLabel.center.x = screenWidth / 2;
+        //imageView.center.x = screenWidth / 2;
         
-        if (DetailViewController)
+        //if (DetailViewController)
         
         
-        detailDescriptionLabel.center.x = screenWidth / 2;
+        //detailDescriptionLabel.center.x = screenWidth / 2;
         
         
     }

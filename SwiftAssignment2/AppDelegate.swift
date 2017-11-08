@@ -1,9 +1,8 @@
 //
-//  AppDelegate.swift
-//  TestMD
-//
-//  Created by Adam Jenkins on 11/9/17.
-//  Copyright © 2017 Adam Jenkins. All rights reserved.
+//  Mobile Application Enterprise Development Assignment 2
+//  Created by Gianni Anfiteatro
+//  anfgy001
+//  110169824
 //
 
 import UIKit

@@ -1,9 +1,8 @@
 //
-//  MasterViewController.swift
-//  TestMD
-//
-//  Created by Adam Jenkins on 11/9/17.
-//  Copyright © 2017 Adam Jenkins. All rights reserved.
+//  Mobile Application Enterprise Development Assignment 2
+//  Created by Gianni Anfiteatro    
+//  anfgy001
+//  110169824
 //
 
 import UIKit
@@ -62,11 +61,24 @@ class MasterViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = self.tableView.indexPathForSelectedRow {
-            let object = segueDictionary[segueArray[indexPath.row]]
-            let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-            controller.detailItem = object
-            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
-            controller.navigationItem.leftItemsSupplementBackButton = true
+            
+            if (segue.identifier == "Search") {
+                let object = segueDictionary[segueArray[indexPath.row]]
+                let controller = (segue.destination as! UINavigationController).topViewController as! SearchViewController
+                controller.detailItem = object
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+            else
+            {
+                let object = segueDictionary[segueArray[indexPath.row]]
+                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.detailItem = object
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+            
+            
         }
     }
 
